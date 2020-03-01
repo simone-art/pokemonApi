@@ -1,0 +1,613 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    height: 600px;
+    background-image: url("../img/abstracto2.webp");
+    background-repeat: no-repeat, repeat;
+}
+
+.container-pikachu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pikachu-portada {
+    width: 100px;
+    height: 600px;
+    margin : 0 auto;
+}
+
+.card-pikachu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.img-pikachu {
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+.texto-site {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 600px;
+    font-size: 60px;
+    color: white;
+}
+
+
+
+#container-pokemon {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+
+.cards {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 250px;
+    padding: 16px;
+    text-align: center;
+    background-color: pink;
+    margin-right: 20px;
+
+}
+.cards:hover {
+    box-shadow: 0 8px 16px 0 black;
+}
+
+.container {
+    padding: 2px 16px;
+}
+  
+
+.nome-pokemon{
+    font-size: 18px;
+}
+
+.pokemon {
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 100px;
+
+}
+
+.container-input{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-pokemon{
+    width: 400px;
+    margin-right: 20px;
+    border: 1px solid;
+}
+
+
+.btn-information {
+    margin-top: 5px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin-left: 60px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.btn-information:hover{
+    background-color: #555555;
+  color: white;
+}
+
+#opcoes {
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+h1{
+    font-size: 20px;
+    color: black;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+h2{
+    width: 150px;
+    background-color: blueviolet;
+    font-size: 10px;
+    color: white;
+}
+
+.option-pokemon{
+    width: 300px;
+    background-color:#ffff00;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    border-color: #0288d1;
+}
+
+/* .btn-modal-black{
+    order: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: black;
+    color: white;
+} */
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0 px;
+    left: 0 px;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none
+}
+
+.modal, .modal-2, .modal-3, .modal-4, .modal-5, .modal-6, .modal-7, .modal-8, .modal-9, .modal-10, .modal-11, .modal-12, .modal-13, .modal-14, .modal-15, .modal-16, .modal-17, .modal-18, .modal-19, .modal-20, .modal-21, .modal-22, .modal-23, .modal-24, .modal-25, .modal-26, .modal-27, .modal-28, .modal-29, .modal-30   {
+display: flex;
+background: white;
+width: 60%;
+min-width: 300px;
+padding: 40px;
+border: 10px solid #988b7A;
+box-shadow: 0 0 0 10px white;
+position: relative;
+}
+
+.fechar{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #988b7A;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    font-size: 1.2 em;
+
+}
+
+
+
+/* //MEDIA QUARE// */
+
+@media (max-width: 320px){
+    .container-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .img-pikachu {
+        position: absolute;
+        left: -35px;
+        top: -20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    
+    
+    .texto-site {
+        position: absolute;
+        left: 50px;
+        top: 250px;
+        width: 300px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .container-input{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-pokemon{
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: 1px solid;
+    }
+
+    .option-pokemon{
+        width: 250px;
+        background-color:#ffff00;
+        margin-bottom: 30px;
+        font-size: 15px;
+        border-radius: 20px;
+        border-color: #0288d1;
+    }
+
+    #opcoes {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    #container-pokemon, #container-pokemon2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 20px;
+    }
+    
+}
+
+
+@media (max-width: 375px){
+    .container-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .img-pikachu {
+        position: absolute;
+        left: -35px;
+        top: -20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    
+    
+    .texto-site {
+        position: absolute;
+        left: 50px;
+        top: 250px;
+        width: 300px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .container-input{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-pokemon{
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: 1px solid;
+    }
+
+    .option-pokemon{
+        width: 250px;
+        background-color:#ffff00;
+        margin-bottom: 30px;
+        font-size: 15px;
+        border-radius: 20px;
+        border-color: #0288d1;
+    }
+
+    #opcoes {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    #container-pokemon, #container-pokemon2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 20px;
+    }
+    
+}
+
+
+@media (max-width: 425px){
+    .container-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .img-pikachu {
+        position: absolute;
+        left: -35px;
+        top: -20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    
+    
+    .texto-site {
+        position: absolute;
+        left: 50px;
+        top: 250px;
+        width: 300px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .container-input{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-pokemon{
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: 1px solid;
+    }
+
+    .option-pokemon{
+        width: 250px;
+        background-color:#ffff00;
+        margin-bottom: 30px;
+        font-size: 15px;
+        border-radius: 20px;
+        border-color: #0288d1;
+    }
+
+    #opcoes {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    #container-pokemon, #container-pokemon2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 20px;
+    }
+    
+}
+
+
+@media (max-width: 768px){
+    .container-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .img-pikachu {
+        position: absolute;
+        left: -35px;
+        top: -20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    
+    
+    .texto-site {
+        position: absolute;
+        left: 50px;
+        top: 250px;
+        width: 300px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .container-input{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    
+    }
+
+    .options {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .input-pokemon{
+        width: 150px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        border: 1px solid;
+    }
+
+    .option-pokemon{
+        width: 300px;
+        background-color:#ffff00;
+        margin-bottom: 30px;
+        font-size: 10px;
+        border-radius: 20px;
+        border-color: #0288d1;
+    }
+
+    #opcoes {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    #container-pokemon, #container-pokemon2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 20px;
+    }
+    
+}
+
+
+@media (max-width: 1024px){
+    .container-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-pikachu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .img-pikachu {
+        position: absolute;
+        left: -35px;
+        top: -20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    
+    
+    .texto-site {
+        position: absolute;
+        left: 50px;
+        top: 250px;
+        width: 300px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .container-input{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    
+    }
+
+    .options {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .input-pokemon{
+        width: 200px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .option-pokemon{
+        width: 250px;
+        background-color:#ffff00;
+        margin-bottom: 30px;
+        font-size: 15px;
+        border-radius: 20px;
+        border-color: #0288d1;
+    }
+
+    #opcoes {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    #container-pokemon, #container-pokemon2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 20px;
+    }
+    
+}
+
+
+
