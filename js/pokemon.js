@@ -45,11 +45,11 @@ const botao = document.querySelector(".btn-information");
                     console.log("funciona")
                 let container = document.getElementById("container-pokemon");
                 let containerPokemon = document.createElement('div')
-                let textoPokemon = document.createElement('h1');
-                textoPokemon.textContent = []
+                let textoPokemonCard = document.createElement('h1');
+                textoPokemonCard.textContent = textoPokemon[card];
                 containerPokemon.classList.add("cards");
                 container.appendChild(containerPokemon);
-                containerPokemon.appendChild(textoPokemon)
+                containerPokemon.appendChild(textoPokemonCard)
 
         
             }
