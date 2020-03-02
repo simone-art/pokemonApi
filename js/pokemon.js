@@ -1,6 +1,6 @@
 const input = document.querySelector(".input-pokemon-inicial");
 const botao = document.querySelector(".btn-information");
-// const container = document.getElementById("container-pokemon");
+const container = document.getElementById("container-pokemon");
 // const card = document.querySelector('.cards');
 // const input3 = document.getElementById("pokemon-numero");
 // const selectedValue = document.getElementById("valorInput")
@@ -36,10 +36,13 @@ const botao = document.querySelector(".btn-information");
             
             //FUNÇAO NO BOTÂO//
             // const containerPokemon = [1,2,3,4,5]
-            const valuePokemon = ["1", "2","3", "4", "5" ]
+            botao.addEventListener('click', (e) => getCardPokemon());
+            
+            const valuePokemon = ["1", "2","3", "4", "5"]
             const textoPokemon = ["Card1", "Card2","Card3", "Card4", "Card5" ]
             
-            botao.addEventListener('click', function(){
+            function getCardPokemon(e){
+                event.preventDefault();
                 let card = 0
                 for (card = 0;  card < valuePokemon.length; card++){
                     console.log("funciona")
@@ -51,10 +54,34 @@ const botao = document.querySelector(".btn-information");
                 container.appendChild(containerPokemon);
                 containerPokemon.appendChild(textoPokemonCard)
 
-        
             }
-    })
+
+        
+        }
+    
+
+    botao.addEventListener('click', (e) => getCardPokemon2());
+
+    const valuePokemon2 = ["6", "7","8", "9", "10"]
+    const textoPokemon2 = ["Card6", "Card7","Card8", "Card9", "Card10" ]
+    
+    
+    function getCardPokemon2(e){
+        event.preventDefault();
+        let card2 = 0
+        for (card2 = 0;  card2 < valuePokemon.length; card2++){
+            console.log("funciona")
+        let container2 = document.getElementById("container-pokemon2");
+        let containerPokemon2 = document.createElement('div')
+        let textoPokemonCard2 = document.createElement('h1');
+        textoPokemonCard2.textContent = textoPokemon2[card2];
+        containerPokemon2.classList.add("cards");
+        container2.appendChild(containerPokemon2);
+        containerPokemon2.appendChild(textoPokemonCard2)
+    }
+}
    
+
 
 
 
